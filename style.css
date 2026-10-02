@@ -1,49 +1,99 @@
+/* Removes default margins from every element */
+*{
+    margin: 0;
+}
+/* ===== Page-wide styles ===== */
 body{
     background-color: lightgrey;
     width: 100%;
 }
+/* ===== Navigation bar ===== */
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* spreads the links across the bar */
     background-color: lightblue;
     width: 100%;
 }
+/* Individual nav links */
 .navbar a{
     display: inline-block;
-    padding: 0.5%;
+    padding: 0.7%;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none; /* removes the default underline */
     color: black;
     width: 5%;
-    min-width: 50px;
+    min-width: 50px; /* keeps links readable on small screens */
 }
+/* Highlight a nav link when hovered */
 .navbar a:hover{
     background-color: white;
 }
-.content{
+/* ===== Main content box ===== */
+main{
     background-color: white;
+    /* centers the box horizontally */
     margin: 0 auto;
     width: 50%;
+    /* rounds only the bottom corners */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border:1px solid darkgrey;
+    border-top: 0; /* top edge joins the banner image seamlessly */
+    margin-bottom: 5%;
+    padding-bottom: 1%;
 }
+/* ===== Images ===== */
+/* Default size for images (e.g. the photo in main) */
 img{
+    width:25%;
+}
+/* Banner image stretches the full page width */
+.bannerpicture img{
     width: 100%;
-    vertical-align: bottom;
+    vertical-align: bottom; /* removes the small gap below the image */
 }
-*{
-    margin: 0;
-}
+/* ===== Form styles ===== */
+/* Email and message fields fill most of the form width */
 #email, #message{
     display: block;
     margin: 0 auto 10px auto;
     width: 98%;
+    /* locks the width so the textarea can't be resized wider/narrower */
     max-width: 98%;
-    min-width: 98%;
+    min-width: 98%; 
 }
+/* Labels take up their own line */
 label{
     display: inline-block;
     width:97%;
 }
+/* Centers the submit button */
 .btn{
     margin: 0 auto;
     display: block;
+}
+/* Dropdown menu width */
+select{
+    width: 10%;
+}
+/* Adds vertical space around the radio and dropdown groups */
+.spacing{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* ===== Footer ===== */
+footer{
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: lightblue;
+    width: 100%;
+    margin-top: auto; /* pushes the footer to the bottom of the page */
+}
+/* ===== Page layout wrapper ===== */
+/* Column layout with full-height so the footer sticks to the bottom */
+.page{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
