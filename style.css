@@ -45,7 +45,9 @@ main{
 /* ===== Images ===== */
 /* Default size for images (e.g. the photo in main) */
 img{
+    display: block;
     width:25%;
+    margin: 0 auto;
 }
 /* Banner image stretches the full page width */
 .bannerpicture img{
