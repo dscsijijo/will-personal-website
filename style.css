@@ -2,21 +2,21 @@
 *{
     margin: 0;
 }
-/* ===== Page-wide styles ===== */
+/* Page-wide styles */
 body{
-    background-color: lightgrey;
+    background-color: lightgrey;/*background color for the whole page */
     width: 100%;
 }
-/* ===== Navigation bar ===== */
+/* Navigation bar */
 .navbar{
-    display: flex;
+    display: flex;/*easier to space the links evenly across the bar */
     justify-content: space-between; /* spreads the links across the bar */
     background-color: lightblue;
     width: 100%;
 }
 /* Individual nav links */
 .navbar a{
-    display: inline-block;
+    display: inline-block;/* makes the links behave like buttons by allowing them to have width and height */
     padding: 0.7%;
     text-align: center;
     text-decoration: none; /* removes the default underline */
@@ -28,7 +28,7 @@ body{
 .navbar a:hover{
     background-color: white;
 }
-/* ===== Main content box ===== */
+/* Main content box */
 main{
     background-color: white;
     /* centers the box horizontally */
@@ -37,12 +37,12 @@ main{
     /* rounds only the bottom corners */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    border:1px solid darkgrey;
+    border:1px solid darkgrey;/* adds a border around the box */
     border-top: 0; /* top edge joins the banner image seamlessly */
-    margin-bottom: 5%;
-    padding-bottom: 1%;
+    margin-bottom: 5%;/*adds space between the main box and the footer */
+    padding-bottom: 1%;/* adds space between the bottom of the box and the content inside it */
 }
-/* ===== Images ===== */
+/* Images */
 /* Default size for images (e.g. the photo in main) */
 img{
     display: block;
@@ -54,7 +54,7 @@ img{
     width: 100%;
     vertical-align: bottom; /* removes the small gap below the image */
 }
-/* ===== Form styles ===== */
+/* Form styles */
 /* Email and message fields fill most of the form width */
 #email, #message{
     display: block;
@@ -83,7 +83,7 @@ select{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-/* ===== Footer ===== */
+/* Footer */
 footer{
     display: block;
     padding-top: 5%;
@@ -92,7 +92,7 @@ footer{
     width: 100%;
     margin-top: auto; /* pushes the footer to the bottom of the page */
 }
-/* ===== Page layout wrapper ===== */
+/* Page layout wrapper */
 /* Column layout with full-height so the footer sticks to the bottom */
 .page{
     display:flex;
